@@ -1,0 +1,51 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Multiply to Match</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="tv">
+
+  <div id="startScreen">
+    <div class="scrolling-bg"></div>
+    <div class="start-content">
+      <img src="imgs/casette.gif" style="width: 30%; height: auto;">
+      <button id="startBtn">Start</button>
+    </div>
+  </div>
+
+  <img id="characterimg" src="imgs/yuiidle.png">
+  <div id="gameContainer" class="card">
+
+    <h1>Multiply to Match</h1>
+    <p> Streak: <span id="streakDisplay">0</span></p>
+    <p><span id="problemDisplay">Problem #1</span></p>
+    <hr style="border:none;border-top:1px solid #ffffff;margin:16px 0">
+
+    <div class="equation">
+      <div class="col">
+        <div id="showA" class="num">?</div>
+        <div class="symbol">×</div>
+        <input id="guessR" type="number" class="input blank" value="0" min="0" step="1">
+      </div>
+      <div class="symbol big">+</div>
+      <div class="col">
+        <div id="showB" class="num">?</div>
+        <div class="symbol">×</div>
+        <input id="guessS" type="number" class="input blank" value="0" min="0" step="1">
+      </div>
+      <div class="symbol big">=</div>
+      <div class="resultEq" id="nVal">—</div>
+    </div>
+  </div>
+  <div id="message" class="result" style="display:none"></div>
+</div>
+
+<script src="gamefunc.js"></script>
+<script src="other.js"></script>
+</body>
+</html>
