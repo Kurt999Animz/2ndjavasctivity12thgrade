@@ -27,7 +27,15 @@ html, body {
   background-image: url('imgs/bg.png');
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
+    @media (max-aspect-ratio: 16/9) {
+      .tv {
+        width: 100vw;
+        height: 56.25vw; 
+        max-height: 100vh;
+      }
+    }
 
 .card {
   background-image: url('imgs/blackboard.jpg');
